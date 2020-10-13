@@ -1,10 +1,10 @@
 # Certbot + AppService 자동화 프로젝트
 -` root domain에 대한 지원X` 에 대한 해결을 위함.
 # 흐름
-- 인증을 위한 Azure DNS 셋팅(txt, A record, CNAME)
-- Certbot으로 SSL 인증서를 생성
-- 인증서를 keyvault에 저장
-- Azure DNS에서 A record 혹은 CNAME 복구
+- ACME DNS01 인증 시작
+- 인증을 위한 Azure DNS 셋팅(txt record) [Azure docs](https://docs.microsoft.com/ko-kr/python/api/overview/azure/dns?view=azure-python)
+- SSL 인증서 Drop
+- 인증서를 keyvault에 저장 [Azure docs](https://docs.microsoft.com/ko-kr/python/api/overview/azure/key-vault?view=azure-python)
 
 # 필요한 지식
 - Cerbot에서 non-interaction 명령어
