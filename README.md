@@ -1,5 +1,5 @@
 # Certbot + AppService 자동화 프로젝트
-- root domain에 대한 지원X
+-` root domain에 대한 지원X` 에 대한 해결을 위함.
 # 흐름
 - 인증을 위한 Azure DNS 셋팅(txt, A record, CNAME)
 - Certbot으로 SSL 인증서를 생성
@@ -23,4 +23,8 @@ from your Key vault to add a new policy, then grant “Microsoft.Azure.Cdn” se
  
  
  ## 참고
- https://certbot.eff.org/docs/install.html#running-with-docker
+ - With docker - https://certbot.eff.org/docs/install.html#running-with-docker
+ - ACME client python - https://github.com/certbot/certbot/blob/master/acme/examples/http01_example.py
+ - ACME client dns challenge - https://stackoverflow.com/questions/58506975/python-acme-v2-reuse-order-challenge
+ 
+ 
